@@ -179,7 +179,25 @@ body{
         font-weight: var(--fw-black);
     }
 
+    .grid-group{
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
     .label__value{
         font-weight: var(--fw-bold);
        
+    }
+
+    .button{
+        width: 100%;
+        border: none;
+        color: white;
+        padding-top: 1em;
+        padding-bottom: 1.12em;
+        border-radius: 100vw;
+        background-color: var(--dark-gray-blue);
+        font-weight: var(--fw-black);
+        font-size: var(--fs-200);
     }
