@@ -148,5 +148,30 @@ body{
     }
 
     .summary-container{
-     
+     padding: 1.5rem 1.875rem 0 1.875rem;
+    }
+
+    .summary__title{
+     color:var(--dark-gray-blue);
+     font-weight: var(--fw-bold);
+
+     margin-bottom: 1.5rem;
+    }
+
+    .labels-container{
+        outline: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 17px 16px 18px;
+        border-radius: 1rem;
+    }
+
+    .flex-group{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1rem;
+        font-weight: var(--fw-black);
     }
