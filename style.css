@@ -47,11 +47,22 @@
 
   :root{
     /* primary colors*/
---light-red: hsl(0, 100%, 67%);
---orangey-yellow: hsl(39, 100%, 56%);
---green-teal: hsl(166, 100%, 37%);
---cobalt-blue: hsl(234, 85%, 45%);
+
+--light-red: 0, 100%, 67%;
+--orange-yellow: 39, 100%, 56%;
+--green-teal: 166, 100%, 37%;
+--cobalt-blue: 234, 85%, 45%;
   
+--light-red-hsl: hsl(var(--light-red));
+--orange-yellow-hsl: hsl(var(--orange-yellow));
+--green-teal-hsl: hsl(var(--green-teal));
+--cobal-blue-hsl: hsl(var(--cobalt-blue));
+
+--light-red-hsla: hsla(var(--light-red), 0.1);
+--orange-yellow-hsla: hsla(var(--orange-yellow), 0.1);
+--green-teal-hsla: hsla(var(--green-teal), 0.1);
+--cobal-blue-hsla: hsla(var(--cobalt-blue), 0.1);
+
    /* gradients*/
    --light-slate-blue: hsl(252, 100%, 67%);
    --light-royal-blue: hsl(241, 81%, 54%);
@@ -154,7 +165,7 @@ body{
     .summary__title{
      color:var(--dark-gray-blue);
      font-weight: var(--fw-bold);
-
+     font-size: var(--fs-200);
      margin-bottom: 1.5rem;
     }
 
@@ -166,9 +177,9 @@ body{
 
         padding: 17px 16px 18px;
         border-radius: 1rem;
-
-        color: var(--dark-gray-blue);
-        
+         color: var(--dark-gray-blue);
+        background-color: var(--light-red-2);
+       
     }
 
     .flex-group{
