@@ -166,6 +166,9 @@ body{
 
         padding: 17px 16px 18px;
         border-radius: 1rem;
+
+        color: var(--dark-gray-blue);
+        
     }
 
     .flex-group{
@@ -174,4 +177,9 @@ body{
         gap: 12px;
         font-size: 1rem;
         font-weight: var(--fw-black);
+    }
+
+    .label__value{
+        font-weight: var(--fw-bold);
+       
     }
