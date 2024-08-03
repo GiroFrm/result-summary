@@ -65,6 +65,7 @@
    --light-lavender: hsl(241, 100%, 89%);
    --dark-gray-blue: hsl(224, 30%, 27%);
 
+    
     --fs-150: 1rem;
     --fs-200: 1.125rem;
 
@@ -73,4 +74,59 @@
     --fw-bold:800;
 
     --font-family: "Hanken Grotesk", sans-serif;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+
+    font-family: var(--font-family);
+    font-size: var(--fs-150);
+}
+.card{
+    outline: 1px solid red;
+}
+
+.results-container{
+    outline: 3px solid green;
+   text-align: center;
+
+   background-color: var(--light-royal-blue);
+   color: white;
+
+   padding: 1.5rem 3.62rem 2.5rem;
+}
+
+.result-label{
+    color: var(--light-lavender);
+    font-weight: var(--fw-black);
+    letter-spacing: 0.5px; 
+
+    margin-bottom: 1.5rem;
+    }
+    .score{
+    outline: 3px solid yellow;
+    border-radius: 50%;
+    width: fit-content;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    width: 8.75rem;
+
+    display: grid;
+    place-content: center;
+    
+    }
+    .score__total{
+        font-size: 3.5rem;
+       
+    }
+    .score__scale{
+        font-size: var(--fs-150);
+        display:block;
+        line-height: 1;
+    }
+
+    .description{
+    
 }
